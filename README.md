@@ -1,2 +1,2 @@
-# Aula-Youtube
-Aula-Youtube
+# Projeto 02
+Projeto HTML e CSS minha pessoa
