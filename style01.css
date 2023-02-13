@@ -9,8 +9,23 @@ body{
     background-color:black;
     color: aliceblue;
 }
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #F2BD02;
+}
 .apresentacao{
-    padding:10% 15%;
+    padding: 8% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +47,7 @@ body{
 }
 .apresentacao__paragrafo__01{
     font-family: 'Montserrat', sans-serif;
-    font: size 24px; ;
+    font: size 24px;
 }
 .apresentacao__links{
     display: flex;
