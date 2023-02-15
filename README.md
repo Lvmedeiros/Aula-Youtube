@@ -1,2 +1,3 @@
 # Projeto 02
-Projeto HTML e CSS minha pessoa
+
+Criaando um CV com HTML e CSS 
