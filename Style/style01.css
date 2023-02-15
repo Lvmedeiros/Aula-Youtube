@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+:root {
+--cor-primaria:black;
+--cor-secundaria:whitesmoke;
+--cor-terciaria:#F2BD02;
+/* variaaveis no css para saber mais sobre root */
+}
 * {
     margin: 0%;
     padding:0%;
@@ -6,8 +12,10 @@
 body{
     /* height: 100vh; no inicio usamos para usar 100% de página */
     box-sizing: border-box;
-    background-color:black;
-    color: aliceblue;
+    background-color:var(--cor-primaria);
+    color: var(--cor-secundaria);
+    /* usamos a variavel Root para dar nome para as cores assim,
+    em qualquer parte de projeto que quisermos aplicaraquela cor usamor Var( -- NOME DADO-#cor) */
 }
 .cabecalho{
     padding: 2% 0% 0% 15%;
