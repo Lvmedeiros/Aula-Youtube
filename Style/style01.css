@@ -3,6 +3,7 @@
 --cor-primaria:black;
 --cor-secundaria:whitesmoke;
 --cor-terciaria:#F2BD02;
+--font-size-24px:1.5rem
 /* variaaveis no css para saber mais sobre root */
 }
 * {
@@ -28,25 +29,26 @@ body{
 
 .cabecalho__link{
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #F2BD02;
+    font-weight:600;
+    color:var(--cor-terciaria);
     text-decoration: none;
+    font-size: var(--font-size-24px)
 }
 .apresentacao{
     padding: 8% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 .apresentacao__titulo{
-    font: size 36px; ;
+    font-size:2.25rem ;
     font-family: 'Krona One', sans-serif;
 
 }
@@ -65,7 +67,7 @@ body{
     gap: 32px
 }
 .apresentacao__links__subtitulo{
-    font-size:24px ;
+    font-size: var(--font-size-24px);
     font-family:'Krona One', sans-serif ;
     font-weight: 400;
 }
@@ -76,12 +78,12 @@ body{
     justify-content: center;
     align-items: center;
     gap: 16px;
-    width: 378px;
+    width:50%;
     text-align: center;
     border-radius: 8px;
     color:whitesmoke;
     text-decoration: none;
-   font-size: 24px;
+   font-size:var(--font-size-24px);
    padding: 21.5px 0;
    font-family:'Montserrat', sans-serif;
    font-weight: 600;
@@ -90,12 +92,26 @@ body{
 .apresentacao__links__link:hover{
     background-color: #272727;
 }
+.apresentacao__imagem{
+width: 50%;
+}
 .rodape{
     background-color: #F2BD02;
     color:black;
     padding: 24px;
     text-align: center;
     font-family:'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
+}
+@media (max-width:1275px) { /* usamos isso para determinar quando a tela vai mudar de tamnaho para melhorar a experiencia do usuario */
+   .cabecalho{
+    padding: 10%;
+   }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column;
+    }
 }
