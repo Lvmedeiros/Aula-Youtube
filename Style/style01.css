@@ -112,6 +112,10 @@ width: 50%;
         justify-content: center;
     }
     .apresentacao{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto ;
     }
 }
